@@ -1,0 +1,23 @@
+@import url(src/styles/vars.css);
+
+.pesquisa-titulo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: var(--fonte);
+}
+
+.pesquisa input[type="date"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: var(--fonte);
+}
+
+

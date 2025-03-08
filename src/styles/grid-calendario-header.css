@@ -1,0 +1,17 @@
+@import url(src/styles/vars.css);
+
+.cabecalho-cont-plan-prod {
+    display: flex;
+    flex-direction: row;
+    background-color: #2E3577;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+}
+
+.cabecalho-cont-plan-prod h1 {
+    color: white;
+    font-weight: bold;
+    font-size: 1.7rem;
+    font-family: "Amiko", sans-serif;
+}

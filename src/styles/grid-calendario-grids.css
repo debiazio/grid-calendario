@@ -1,0 +1,20 @@
+@import url(src/styles/vars.css);
+
+.grids {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.grid1-cabecalho,
+.grid1-conteudo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid2-cabecalho {
+    display: grid;
+    grid-template-columns: repeat(31, 1fr);
+    gap: 5px;
+    text-align: center;
+}
