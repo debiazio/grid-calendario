@@ -1,0 +1,51 @@
+@import url(contPlanProd-vars.css);
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    color:white;
+    padding: 5px;
+    text-align: center;
+    color: white;
+    font-family: var(--fonte);
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+}
+td {
+    border: 1px solid black;
+    padding: 2px;
+    text-align: center;
+    color: black;
+    vertical-align: middle;
+    
+    
+}
+
+td input{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    margin-left: -2px;
+    text-align: center;
+    border: none;
+
+}
+
+th {
+    background-color: #2E3577;
+}
+.sticky {
+    position: sticky;
+    left: 0;
+    z-index: 2;
+    width: 110px;
+    height: 48px;
+    background-color: #BFBFBF;
+}
+
+
+#data-table {
+    table-layout: fixed;
+    width: 100%; /* Ou uma largura específica */
+}

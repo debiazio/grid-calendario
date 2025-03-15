@@ -1,4 +1,4 @@
-@import url(src/styles/vars.css);
+@import url(/src/styles/contPlanProd-vars.css);
 
 .pesquisa-titulo{
     display: flex;

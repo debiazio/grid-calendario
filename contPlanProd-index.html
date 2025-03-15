@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Controle e planejamento de Produção</title>
+    <link rel="stylesheet" href="src/styles/reset-css.css">
+    <link rel="stylesheet" href="src/styles/vars.css">
+    <link rel="stylesheet" href="src/styles/contPlanProd-header.css">
+    <link rel="stylesheet" href="src/styles/contPlanProd-linha-pesquisa.css">
+    <link rel="stylesheet" href="src/styles/contPlanProd-table.css">
+    <link rel="stylesheet" href="src/styles/contPlanProd-grids.css">
+    <script src="./src/js/contPlanProd-fetch-api.js" defer></script>
+
+    <script src=""></script>
+</head>
+
+<body>
+    <header class="cabecalho-cont-plan-prod">
+        <img src="src/assets/logo-top-sis.svg" alt="Logo TopSis">
+        <h1>CONTROLE E PLANEJAMENTO DE PRODUÇÃO</h1>
+        <img src="src/assets/excel-upload.png" alt="" class="excel">
+    </header>
+
+    <main>
+        <section class="pesquisa-titulo">
+            <div class="datas">
+                <div class="pesquisa">
+                    <label>DATA INICIAL</label>
+                    <input type="date" id="data-inicial">
+                </div>
+                <div class="pesquisa">
+                    <label>DATA FINAL</label>
+                    <input type="date" id="data-final">
+                </div>
+            </div>
+            <div class="outros-seletores">
+                <div class="pesquisa">
+                    <label>CLIENTE</label>
+                    <input type="text" id="data-inicial">
+                </div>
+                <div class="pesquisa">
+                    <label>SETOR PRODUTIVO</label>
+                    <input type="text" id="data-final">
+                </div>
+            </div>
+
+            <div class="titulo-mes">
+                <h2>MÊS/ANO</h2>
+            </div>
+
+        </section>
+        
+        <table id="data-table">
+            <thead>
+                <tr>
+                    <th class="sticky">CÓDIGO / NOME</th>
+                    <th class="sticky">CLIENTE</th>
+                    <th class="sticky">MÁQ. INJ.</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </main>
+
+</html>
