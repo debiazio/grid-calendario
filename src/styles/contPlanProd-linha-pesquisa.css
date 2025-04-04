@@ -1,6 +1,6 @@
 @import url(/src/styles/contPlanProd-vars.css);
 
-.pesquisa-titulo{
+.pesquisa-titulo {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -20,4 +20,60 @@
     font-family: var(--fonte);
 }
 
+.parametros-pesquisa {
+    display: flex;
+}
 
+.titulo-mes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
+    width: 100%;
+    margin-left: 20px;   
+}
+
+.titulo-mes h2{
+    /* font-weight: bold; */
+    font-size: 38px;
+}
+
+.datas,
+.outros-seletores {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+    gap: 10px;
+    margin-top: 5px;
+    
+}
+
+.outros-seletores{
+    border-right: 1px solid rgb(197, 197, 197);
+}
+
+.pesquisa label {
+    text-transform: capitalize;
+    padding: 5px;
+}
+
+
+.pesquisa-s input {
+    height: 34px;
+    border-radius: 8px;
+    border: 1px solid rgb(197, 197, 197);
+}
+
+.pesquisar button{
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.pesquisar button{
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2);
+}

@@ -5,11 +5,10 @@
     <meta charset="UTF-8">
     <title>Controle e planejamento de Produção</title>
     <link rel="stylesheet" href="src/styles/reset-css.css">
-    <link rel="stylesheet" href="src/styles/vars.css">
+    <link rel="stylesheet" href="src/styles/contPlanProd-vars.css">
     <link rel="stylesheet" href="src/styles/contPlanProd-header.css">
     <link rel="stylesheet" href="src/styles/contPlanProd-linha-pesquisa.css">
     <link rel="stylesheet" href="src/styles/contPlanProd-table.css">
-    <link rel="stylesheet" href="src/styles/contPlanProd-grids.css">
     <script src="./src/js/contPlanProd-fetch-api.js" defer></script>
 
     <script src=""></script>
@@ -24,39 +23,53 @@
 
     <main>
         <section class="pesquisa-titulo">
-            <div class="datas">
-                <div class="pesquisa">
-                    <label>DATA INICIAL</label>
-                    <input type="date" id="data-inicial">
+            <form class="parametros-pesquisa">
+                <div class="datas">
+                    <div class="pesquisa">
+                        <label>data inicial</label>
+                        <input type="date" id="data-inicial">
+                    </div>
+                    <div class="pesquisa">
+                        <label>data final</label>
+                        <input type="date" id="data-final">
+                    </div>
                 </div>
-                <div class="pesquisa">
-                    <label>DATA FINAL</label>
-                    <input type="date" id="data-final">
+                <div class="outros-seletores">
+                    <div class="pesquisa pesquisa-s">
+                        <label>cliente</label>
+                        <input type="text" id="data-inicial">
+                    </div>
+                    <div class="pesquisa pesquisa-s">
+                        <label>setor produtivo</label>
+                        <input type="text" id="data-final">
+                    </div>
+                    <div class="pesquisar">
+                        <button id="btnPesquisar">Pesquisar</button>
+                    </div>
+                    
                 </div>
-            </div>
-            <div class="outros-seletores">
-                <div class="pesquisa">
-                    <label>CLIENTE</label>
-                    <input type="text" id="data-inicial">
-                </div>
-                <div class="pesquisa">
-                    <label>SETOR PRODUTIVO</label>
-                    <input type="text" id="data-final">
-                </div>
-            </div>
+            </form>
 
             <div class="titulo-mes">
                 <h2>MÊS/ANO</h2>
             </div>
 
         </section>
-        
+
         <table id="data-table">
             <thead>
                 <tr>
-                    <th class="sticky">CÓDIGO / NOME</th>
-                    <th class="sticky">CLIENTE</th>
-                    <th class="sticky">MÁQ. INJ.</th>
+                    <th class="sticky"><div class="label">CÓDIGO / NOME</div></th>
+                    <th class="sticky">
+                        <div class="label">
+                            CLIENTE
+                        </div>
+                    </th>
+                    <th class="sticky">
+                        <div class="label">
+                            MÁQ. INJ.
+                        </div>
+                    </th>
                 </tr>
             </thead>
             <tbody></tbody>
